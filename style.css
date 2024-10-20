@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+form {
+  width: 45%;
+}
+
+#resume-preview {
+  width: 45%;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.editable {
+  cursor: pointer;
+  color: blue;
+  text-decoration: underline;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+}

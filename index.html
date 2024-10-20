@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Editable Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form id="resume-form">
+      <h2>Personal Information</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <h2>Education</h2>
+      <textarea id="education" name="education" placeholder="Enter education details"></textarea>
+
+      <h2>Work Experience</h2>
+      <textarea id="experience" name="experience" placeholder="Enter work experience details"></textarea>
+
+      <h2>Skills</h2>
+      <textarea id="skills" name="skills" placeholder="Enter your skills"></textarea>
+
+      <button type="submit">Generate Resume</button>
+    </form>
+
+    <div id="resume-preview">
+      <h2>Resume Preview</h2>
+      <p><strong>Name:</strong> <span id="preview-name" class="editable">Click to edit</span></p>
+      <p><strong>Email:</strong> <span id="preview-email" class="editable">Click to edit</span></p>
+      <p><strong>Phone:</strong> <span id="preview-phone" class="editable">Click to edit</span></p>
+      <h3>Education</h3>
+      <p id="preview-education" class="editable">Click to edit</p>
+      <h3>Experience</h3>
+      <p id="preview-experience" class="editable">Click to edit</p>
+      <h3>Skills</h3>
+      <p id="preview-skills" class="editable">Click to edit</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
